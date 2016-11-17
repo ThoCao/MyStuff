@@ -14,6 +14,11 @@ __global__ void square(float * d_out, float * d_in) {
 __global__ void add(int *a,int *b,int *c) {
 	int idx = threadIdx.x + blockDim.x*blockIdx.x;
 }
+
+__global__ void subtract() {
+	int idx = threadIdx.x;
+
+}
 int main(void)
 {
 	const int ARRAY_SIZE = 64;
